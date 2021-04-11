@@ -16,9 +16,13 @@
   font-family: Mairon;
   src: url("../fonts/Mairon/mairon-webfont.woff");
 }
+
+body {
+  background-color: black;
+}
+
 html {
   color: #222;
-  font-size: 1em;
   line-height: 1.4;
   font-family: 'Cardo', sans-serif;
   font-size: 18px;
@@ -267,6 +271,67 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+/* HERO */
+
+.hero-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+
+.hero-text {
+  font-family: "Mairon", sans-serif;
+  color: lightgray;
+  text-align: center;
+  font-style: normal;
+  font-size: 44px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  margin: 0;
+}
+
+.hero-subtext {
+  font-family: "Cardo", sans-serif;
+  color: darkgray;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+.hero-btn {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0 ,0);
+  transition: border-bottom 300ms;
+  line-height: 5px;
+}
+
+.hero-btn:hover {
+  border-bottom: 1px solid rgba(193, 66, 66, 1);
+}
+
+/* GENERAL */
+
 .header {
   position: relative;
   width: 100%;
@@ -275,13 +340,8 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.content {
-  color: white;
-}
 
-body {
-  background-color: black;
-}
+/* NAV-BAR */
 
 .nav {
   padding-left: 25px;
@@ -290,26 +350,6 @@ body {
   width: auto;
 }
 
-.hero-text {
-  font-family: "Mairon", sans-serif;
-  color: whitesmoke;
-  text-align: center;
-  font-style: normal;
-  font-size: 44px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0;
-  margin: 0;
-  margin-top: 40px;
-}
-
-.hero-subtext {
-  font-family: "Cardo", sans-serif;
-  color: darkgray;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 20px;
-}
 .nav-container {
   width: 100%;
   display: flex;
@@ -331,29 +371,10 @@ body {
   background-size: cover;
 }
 
+
 .items {
   width: 100%;
   margin-left: 65px;
-}
-
-
-li {
-  display: inline;
-  float: left;
-}
-a {
-  display: block;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-a:hover
-{
-  color:lightsalmon;
-  text-decoration:none;
-  cursor:pointer;
 }
 
 #ucp-button {
@@ -394,24 +415,26 @@ a:hover
   background-size: cover;
 }
 
-/*
-#hero-button {
-  background-image: url("../img/button.png");
-  border-radius: 3px;
-  font-size: 18px;
-  text-align: center;
-  height: 40px;
-  width: 130px;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* TAG STYLING */
+
+li {
+  display: inline;
+  float: left;
 }
-*/
-.hero-buttons {
-  display: inline-flex;
-  width: 100%;
-  margin-top: 20px;
-  padding-bottom: 0px;
-  justify-content: center;
+a {
+  transition: color 300ms;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color:lightsalmon;
+  text-decoration:none;
+  cursor:pointer;
 }
 
 hr {
@@ -428,3 +451,17 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/*
+OLD
+#hero-button {
+  background-image: url("../img/button.png");
+  border-radius: 3px;
+  font-size: 18px;
+  text-align: center;
+  height: 40px;
+  width: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
