@@ -20,6 +20,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,7 +41,15 @@
       <workItem from="1618139426206" duration="3546000" />
       <workItem from="1618144825684" duration="7953000" />
       <workItem from="1618159705739" duration="4664000" />
-      <workItem from="1618203723519" duration="8088000" />
+      <workItem from="1618203723519" duration="8787000" />
+      <workItem from="1618217239824" duration="4004000" />
+      <workItem from="1618292362619" duration="1947000" />
+      <workItem from="1618309907560" duration="891000" />
+      <workItem from="1618329239033" duration="1835000" />
+      <workItem from="1618425032236" duration="102000" />
+      <workItem from="1618467565489" duration="3954000" />
+      <workItem from="1618507284592" duration="5071000" />
+      <workItem from="1618551296572" duration="2896000" />
     </task>
     <servers />
   </component>

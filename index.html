@@ -4,60 +4,64 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta content="" property="og:title">
+  <meta content="" property="og:type">
+  <meta content="" property="og:url">
+  <meta content="" property="og:image">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link href="site.webmanifest" rel="manifest">
+  <link href="icon.png" rel="apple-touch-icon">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-G9DpmGxRIF6tpgbrkZVcZDeIomEU22LgTguPAI739bbKytjPE/kHTK5YxjJAAEXC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css">
+  <link crossorigin="anonymous" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-G9DpmGxRIF6tpgbrkZVcZDeIomEU22LgTguPAI739bbKytjPE/kHTK5YxjJAAEXC" rel="stylesheet">
+  <link href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta content="#fafafa" name="theme-color">
 </head>
 
 
 <body>
 
-  <!-- Add your site or application content here -->
+<!-- Add your site or application content here -->
 
-  <div class="container">
+<div class="container">
+  <div class="header-bg">
     <div class="header">
       <div class="nav">
         <div class="nav-top">
           <img src="./img/logo.png" style="width: 220px;">
           <div class="play-section">
             <div class="play-sub-section">
-              <a id="play-button" href="./index.html">PLAY</a>
-              <p id="online-text" style="font-size: 16px;"><span style="color: darkred; font-weight: bold;">8</span>/<span style="color: darkred; font-weight: bold;">120</span> ONLINE</p>
+              <a class="play-a" href="./index.html" id="play-button">PLAY</a>
+              <p id="online-text" style="font-size: 16px;"><span
+                style="color: darkred; font-weight: bold;">8</span>/<span
+                style="color: darkred; font-weight: bold;">120</span> ONLINE</p>
             </div>
           </div>
         </div>
-        <img src="./img/emblem.png" href="./index.html" style="position: absolute; float: left; width: 80px;">
+        <img href="./index.html" src="./img/emblem.png" style="position: absolute; float: left; width: 80px;">
         <div class="nav-container">
           <div class="nav-main">
             <img src="./img/decoratebottom.png" style="padding-top: 25px; width: 100%;">
             <div class="nav-bg">
               <div class="items">
-                <ul>
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="./index.html">Forums</a></li>
-                  <li><a href="./index.html">News</a></li>
-                  <li><a href="./index.html">Discord</a></li>
-                  <li id="ucp-button"><a href="./index.html">UCP</a></li>
+                <ul class="header-ul">
+                  <li class="header-li"><a class="header-a" href="./index.html">Home</a></li>
+                  <li class="header-li"><a class="header-a" href="./index.html">Forums</a></li>
+                  <li class="header-li"><a class="header-a" href="./index.html">News</a></li>
+                  <li class="header-li"><a class="header-a" href="./index.html">Discord</a></li>
+                  <li class="header-li" id="ucp-button"><a href="./index.html">UCP</a></li>
                 </ul>
               </div>
             </div>
@@ -72,77 +76,179 @@
         <h1 class="hero-text">MEDIEVAL ROLEPLAY</h1>
         <h4 class="hero-subtext">Join a medieval realm amidst feudal clashes and dark age intrigue.</h4>
         <div class="hero-buttons">
-          <a class="hero-btn" id="hero-button" href="./index.html"><p>GET STARTED</p></a>
-          <a class="hero-btn" id="hero-button" href="./index.html"><p>LEARN MORE</p></a>
+          <a class="hero-btn" href="./index.html" id="hero-button"><p>GET STARTED</p></a>
+          <a class="hero-btn" href="./index.html" id="hero-button"><p>LEARN MORE</p></a>
         </div>
         <div class="scroll-img">
           <img src="./img/scroll.png" style="width: 30px;">
         </div>
       </div>
     </div>
-    <div class="content">
-      <div class="info">
-        <h1 class="info-title">What is Medieval Roleplay?</h1>
-        <hr class="style-eight">
-        <p class="info-text">
-          Medieval Roleplay is an upcoming server for the GTA: San Andreas Multiplayer modification.
-          Play as a medieval knight, priest or even a poor peasant in a feudal world of war, intrigue
-          and politics. Travel a completely custom modelled map built from scratch for SA:MP's most ambitious project ever.
-        </p>
-        <iframe width="700" height="315"
-                src="https://www.youtube.com/embed/nRaA9yZC7lE">
-        </iframe>
-      </div>
-    </div>
-    <div class="feature-div">
-      <h1 class="info-title">Server Features</h1>
-      <p class="top-text">
-        See the main features Medieval Roleplay has.
+  </div>
+  <div class="content">
+    <div class="info">
+        <span class="label">
+          <span class="label__text">
+            <span style="color: gray;">«</span> About <span style="color: gray;">»</span>
+          </span>
+        </span>
+      <h1 class="info-title">What is Medieval Roleplay?</h1>
+      <p class="info-text">
+        Medieval Roleplay is an upcoming server for the GTA: San Andreas Multiplayer modification.
+        Enter a medieval portrayal of the Holy Roman Empire in the 13th century.
+        Make your own destiny and forge a worthy dynasty on one of SA:MP's most ambitious projects ever.
       </p>
-
-      <div class="feature-container">
-        <div class="feature" style="background-image: linear-gradient(to left, transparent 1%, #000 90%), url('./img/feature-one.png'); background-repeat: no-repeat; border-width: 2px; border-color: white; margin-top: 3px;">
+      <iframe height="315" src="https://www.youtube.com/embed/nRaA9yZC7lE"
+              width="700">
+      </iframe>
+    </div>
+  </div>
+  <div class="feature-div">
+      <span class="label">
+        <span class="label__text">
+          <span style="color: gray;">«</span> Features <span style="color: gray;">»</span>
+        </span>
+      </span>
+    <div class="feature-container">
+      <div class="feature">
+        <div class="img-feature"><img src="/img/test-feature.png" style="width: 600px;"></div>
+        <div class="text-feature">
           <h1 class="feature-title">IMMERSIVE EXPERIENCE</h1>
           <hr class="feature-hr">
           <p class="feature-text">
-            Experience the medieval ages through one of the most immersive roleplay experiences in the entire SA:MP community. Develop your character through hundreds of opportunities, skills, traits, flaws in a dedicated community of players.
+            Live and interact in a true recreation of the medieval times. Become a priest, a knight, a merchant or even
+            a simple peasant. Dedicated community and staff team ensure a fun and fair environment.
           </p>
         </div>
-        <div class="feature-two" style="background-image: linear-gradient(to right, transparent 1%, #000 90%), url('./img/feature-two.png'); background-repeat: no-repeat; border-width: 2px; border-color: white; margin-top: 3px;">
-          <h1 class="feature-title">SEASONS</h1>
-          <hr class="feature-two-hr">
-          <p class="feature-text">
-            Live and die through a realistic environment. Simulated time, weather and seasons open up hundreds of new possibilities. Place changes over time and behave accordingly to their surroundings.
-          </p>
-        </div>
-        <div class="feature" style="background-image: linear-gradient(to left, transparent 1%, #000 90%), url('./img/feature-three.png'); background-repeat: no-repeat; border-width: 2px; border-color: white; margin-top: 3px;">
+      </div>
+      <div class="feature">
+        <div class="img-feature"><img src="/img/test-feature-2.png" style="width: 600px;"></div>
+        <div class="text-feature">
           <h1 class="feature-title">CHARACTERS</h1>
           <hr class="feature-hr">
           <p class="feature-text">
-            Experience the medieval ages through one of the most immersive roleplay experiences in the entire SA:MP community. Develop your character through hundreds of opportunities, skills, traits, flaws in a dedicated community of players.
+            Develop your character through hundreds of opportunities, skills, traits, flaws in a dedicated community of
+            players. Create connections, build networks and grow your character with community support.
           </p>
         </div>
-        <div class="feature-two" style="background-image: linear-gradient(to right, transparent 1%, #000 90%), url('./img/feature-four.png'); background-repeat: no-repeat; border-width: 2px; border-color: white; margin-top: 3px;">
-          <h1 class="feature-title">KINGDOMS</h1>
-          <hr class="feature-two-hr">
+      </div>
+      <div class="feature">
+        <div class="img-feature"><img src="/img/test-feature-3.png" style="width: 600px;"></div>
+        <div class="text-feature">
+          <h1 class="feature-title">FEUDAL WORLD</h1>
+          <hr class="feature-hr">
           <p class="feature-text">
-            Live and die through a realistic enviroment. Simulated time, weather and seasons open up hundreds of new possibilities. Place changes over time and behave accordingly to their surroundings.
+            Live, die or immortalise yourself in a world of deception, feudal politics and religious fever. Shape your
+            future and destiny however you want in a realistic medieval world.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="img-feature"><img src="/img/test-feature.png" style="width: 600px;"></div>
+        <div class="text-feature">
+          <h1 class="feature-title">TRADING</h1>
+          <hr class="feature-hr">
+          <p class="feature-text">
+            Trade all around the Holy Roman Empire in the 13th century. Go on expeditions and voyages to discover new mines, goods and resources. Refurbish items
+            and sell them at a profit.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="img-feature"><img src="/img/test-feature-2.png" style="width: 600px;"></div>
+        <div class="text-feature">
+          <h1 class="feature-title">COMBAT</h1>
+          <hr class="feature-hr">
+          <p class="feature-text">
+            Battle your opponents through a scripted combat system. Based on Mount&Blade, the system allows you to fiercely handle a sword, axe, bow and more. Make yourself worthy
+            with a sheer cut.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="img-feature"><img src="/img/test-feature-3.png" style="width: 600px;"></div>
+        <div class="text-feature">
+          <h1 class="feature-title">BUILT FOR EVERYONE</h1>
+          <hr class="feature-hr">
+          <p class="feature-text">
+            Even on low-end PCs, enjoying the spoils and mysteries of a medieval world are possible. You will
+            even be able to customize a wide range of settings to better your performance.
           </p>
         </div>
       </div>
     </div>
   </div>
+  <div class="faq-div">
+    <span class="label">
+        <span class="label__text">
+          <span style="color: gray;">«</span> FAQ <span style="color: gray;">»</span>
+        </span>
+    </span>
+    <h1 class="info-title">Frequently Asked Questions</h1>
+    <ul class="faq-ul">
+      <span class="question">
+        <li class="question-li">When is the server launching?</li>
+        There is no set date on launch. The base systems are already done, right now we're polishing the existing systems whilst we wait for the map to be finished.
+        The map will be a custom model, so naturally it will take a bit longer than usual.
+      </span>
+    </ul>
+    <ul class="faq-ul">
+      <span class="question">
+        <li class="question-li">Are you holding closed tests?</li>
+          We sometimes hold closed betas for our verified members to partake in and help find bugs. If you would like to participate you can join the discord, be active and
+          helpful and a staff member may give you the Verified role.
+      </span>
+    </ul>
+    <ul class="faq-ul">
+      <span class="question">
+        <li class="question-li">Where does the server take place?</li>
+          The server takes place in 13th century Holy Roman Empire. It features over 10+ different villages, towns, farms and more. In the future, after release, we plan on extending the map to further
+          include more of Central Europe.
+      </span>
+    </ul>
+    <ul class="faq-ul">
+      <span class="question">
+        <li class="question-li">When is the server launching?</li>
+        There is no set date on launch. The base systems are already done, right now we're polishing the existing systems whilst we wait for the map to be finished.
+        The map will be a custom model, so naturally it will take a bit longer than usual.
+      </span>
+    </ul>
+    <ul class="faq-ul">
+      <span class="question">
+        <li class="question-li">Do I need a good PC?</li>
+          No, not really. We have made great strides to our rendering engine, now being able to render a large map without any major performance hits on lower end machines. Even if you
+          are slightly affected, you will be able to set your own draw distance or even disable foliage and more in the settings.
+      </span>
+    </ul>
+    <ul class="faq-ul">
+      <span class="question">
+        <li class="question-li">Where can I see more?</li>
+        Join our <a class="link">Discord</a> where we post daily & weekly updates on our progress aswell as many of our announcements. You can also chat with other members and help us get farther through
+        the word of mouth.
+      </span>
+    </ul>
   </div>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</div>
+</div>
+</div>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 </body>
 
 </html>

@@ -361,6 +361,7 @@ textarea {
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0 ,0);
   transition: border-bottom 300ms;
+  padding: 0 25px;
   line-height: 5px;
 }
 
@@ -370,11 +371,15 @@ textarea {
 
 /* GENERAL */
 
+body {
+  background-image: url("../img/bg.jpg");
+}
+
 .header {
   position: relative;
   width: 100%;
-  height: 600px;
-  background-image: linear-gradient(to bottom, transparent 10%, #000000 95%), url("../img/talmberg-edit.jpg");
+  height: 700px;
+  background-image: url("../img/talmberg-new.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -424,6 +429,7 @@ textarea {
   float: right;
   background-image: url("../img/button.png");
   border-radius: 3px;
+  padding: 0 25px;
   margin-right: 25px;
 }
 
@@ -437,17 +443,16 @@ textarea {
   text-align: center;
   font-size: 24px;
   color: lightsalmon;
-  margin-bottom: -30px;
+  margin-bottom: 0;
 }
 .info-text {
-  width: 65%;
+  width: 60%;
   text-align: center;
   color: darkgray;
   margin-bottom: 50px;
 }
 .info {
   margin-top: 25px;
-  background-color: black;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -455,20 +460,77 @@ textarea {
   align-items: center;
 }
 
-.feature-container {
-  width: 100%;
-
-}
-.feature {
+.discord {
+  margin-top: 100px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
-  height: 350px;
-  background-color: white;
+  align-items: center;
+}
+
+
+.feature-container {
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+
+.feature-text {
+  margin-top: 0px;
+  color: darkgray;
+  width: 60%;
+}
+
+.faq-div {
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-ul {
+  margin-top: 25px;
+  width: 80%;
+}
+.question {
+  color: darkgrey;
   text-align: left;
+}
+
+.question-li {
+  font-size: 22px;
+  color: lightgrey;
+  font-weight: 800;
+}
+
+.faq-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -25px;
+  width: auto;
+}
+
+.feature {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  height: 420px;
   color: white;
-  padding-left: 50px;
 }
 
 .feature-two {
@@ -478,14 +540,24 @@ textarea {
   justify-content: center;
   width: auto;
   height: 350px;
-  background-color: white;
   text-align: right;
   color: white;
-  padding-right: 50px;
+  padding-right: 100px;
 }
+
+.feature-two-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 350px;
+  text-align: center;
+  color: white;
+}
+
 .feature-div {
-  margin-top: 25px;
-  background-color: black;
+  margin-top: 80px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -498,19 +570,16 @@ textarea {
   text-align: center;
   color: darkgray;
   margin-bottom: 40px;
-  margin-top: 30px;
-
 }
 
 .feature-hr {
-  width: 40%;
   overflow: visible; /* For IE */
-  padding: 0;
+  width: 40%;
   border: none;
   color: white;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgb(255,255,255, 0.50), 	rgb(255,255,255, 0));
+  background-image: linear-gradient(to right, rgb(255,255,255, 0.0), rgb(255,255,255, 0.50), 	rgb(255,255,255, 0));
 }
 
 .feature-two-hr {
@@ -524,18 +593,55 @@ textarea {
   background-image: linear-gradient(to left, rgb(255,255,255, 0.50), 	rgb(255,255,255, 0));
 }
 
-iframe { background-color: black; }
+iframe {
+  background-color: black;
+  border: #0F0F0F solid;
+  border-radius: 10px;
+}
 
 .feature-title {
+  letter-spacing: 3px;
   font-size: 30px;
   margin-bottom: -5px;
 }
 
-.feature-text {
-  margin-top: -5px;
-  color: lightgrey;
-  width: 60%;
+
+.message-div {
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
 }
+.message-layer-one {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 80%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  height: 150px;
+}
+
+.message-text {
+  color: lightgrey;
+  width: 90%;
+
+}
+.message-layer-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  width: 99%;
+  height: 94%;
+  text-align: center;
+
+}
+
+
 
 hr.style-eight {
   width: 25%;
@@ -560,8 +666,46 @@ hr.style-eight:after {
   font-size: 1em;
   padding: 0 0.25em;
   color: grey;
-  background: black;
+  background: url("../img/bg.jpg");
 }
+
+.label__text {
+  opacity: .75;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 5px 20px;
+  color: lightgrey;
+  letter-spacing: 0;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+  display: block;
+  position: relative;
+}
+
+.label {
+  justify-content: center;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #393939;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 50%), inset 0 0px 0 0 #393939;
+  background: #0F0F0F;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 4px;
+}
+
+.style-seven {
+  width: 40%;
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  color: white;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgb(255,255,255, 0), rgb(255,255,255, 0.50), 	rgb(255,255,255, 0));
+}
+
 
 .play-section {
   width: 100%;
@@ -590,17 +734,31 @@ hr.style-eight:after {
 
 /* TAG STYLING */
 
-li {
+.header-li {
   display: inline;
   float: left;
 }
+
 a {
+  transition: color 300ms;
+  color: lightblue;
+  text-decoration: none;
+}
+
+.header-a {
   transition: color 300ms;
   display: block;
   padding-left: 20px;
   padding-right: 20px;
   color: white;
-  text-decoration: none;
+}
+
+.play-a {
+  transition: color 300ms;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
 }
 
 a:hover
@@ -610,7 +768,7 @@ a:hover
   cursor:pointer;
 }
 
-ul {
+.header-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
