@@ -13,12 +13,13 @@
 
 
 @font-face {
-  font-family: Mairon;
-  src: url("../fonts/Mairon/mairon-webfont.woff");
-}
-
-body {
-  background-color: black;
+  font-family: 'Mairon';
+  src: url('../fonts/Mairon/Mairon.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Mairon/Mairon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Mairon/Mairon.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Mairon/Mairon.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Mairon/Mairon.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Mairon/Mairon.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 html {
@@ -276,7 +277,47 @@ textarea {
 }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+  .iframe-container {
+    width: 400px;
+    height: 215px;
+  }
+
+
+  .hero-text {
+    font-size: 38px;
+  }
+
+  .hero-subtext {
+    font-size: 18px;
+  }
+
+  .header-a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .play-section {
+    visibility: hidden;
+  }
+}
 @media (min-width: 576px) {
+
+  .iframe-container {
+    width: 500px;
+    height: 215px;
+  }
+
+  .hero-subtext {
+    font-size: 18px;
+  }
+  .header-a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .play-section {
+    visibility: hidden;
+  }
   .nav {
     margin: auto;
     width: 576px;
@@ -285,6 +326,22 @@ textarea {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .iframe-container {
+    width: 700px;
+    height: 315px;
+  }
+
+  .hero-text {
+    font-size: 44px;
+  }
+  .hero-subtext {
+    font-size: 20px;
+  }
+  .header-a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .nav {
     width: 668px;
   }
@@ -292,6 +349,9 @@ textarea {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .play-section {
+    visibility: visible;
+  }
   .nav {
     width: 892px;
   }
@@ -312,6 +372,9 @@ textarea {
 
 /* HERO */
 
+.hero {
+  margin-top: 40px;
+}
 .hero-img {
   width: 100%;
   display: flex;
@@ -331,8 +394,7 @@ textarea {
   color: lightgray;
   text-align: center;
   font-style: normal;
-  font-size: 44px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0;
   margin: 0;
 }
@@ -341,10 +403,15 @@ textarea {
   font-family: "Cardo", sans-serif;
   color: darkgray;
   padding: 0;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   text-align: center;
-  font-size: 20px;
+}
+
+::selection {
+  background: black; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: black; /* Gecko Browsers */
 }
 
 
@@ -354,7 +421,7 @@ textarea {
   display: inline-flex;
   width: 100%;
   margin-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   justify-content: center;
 }
 .hero-btn {
@@ -425,6 +492,19 @@ body {
   margin-left: 65px;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #101010;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkslategrey;    /* color of the scroll thumb */
+  border: 3px solid darkslategrey;  /* creates padding around scroll thumb */
+}
+
 #ucp-button {
   float: right;
   background-image: url("../img/button.png");
@@ -478,7 +558,7 @@ body {
 
 
 .feature-text {
-  margin-top: 0px;
+  margin-top: 0;
   color: darkgray;
   width: 60%;
 }
@@ -496,22 +576,21 @@ body {
   margin-top: 25px;
   width: 80%;
 }
-.question {
-  color: darkgrey;
-  text-align: left;
-}
 
 .question-li {
+  text-align: left;
   font-size: 22px;
   color: lightgrey;
   font-weight: 800;
 }
 
 .faq-ul {
+  color: lightgrey;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .text-feature {
@@ -582,6 +661,18 @@ body {
   background-image: linear-gradient(to right, rgb(255,255,255, 0.0), rgb(255,255,255, 0.50), 	rgb(255,255,255, 0));
 }
 
+.faq-hr {
+  overflow: visible; /* For IE */
+  width: 80%;
+  border: none;
+  color: white;
+  border: 0;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: -5px;
+  background-image: linear-gradient(to right, rgb(255,255,255, 0.30), rgb(255,255,255, 0.30), 	rgb(255,255,255, 0.30));
+}
+
 .feature-two-hr {
   width: 40%;
   overflow: visible; /* For IE */
@@ -591,6 +682,21 @@ body {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to left, rgb(255,255,255, 0.50), 	rgb(255,255,255, 0));
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 iframe {
@@ -641,34 +747,6 @@ iframe {
 
 }
 
-
-
-hr.style-eight {
-  width: 25%;
-  overflow: visible; /* For IE */
-  padding: 0;
-  border: none;
-  border-top: small double white;
-  color: white;
-  text-align: center;
-  border: 0;
-  padding: 0;
-  height: 1px;
-  margin-top: 50px;
-  background-image: linear-gradient(to right, 	rgb(255,255,255, 0), 	rgb(255,255,255, 0.10), 	rgb(255,255,255, 0));
-  margin-bottom: 0px;
-}
-hr.style-eight:after {
-  content: "§";
-  display: inline-block;
-  position: relative;
-  top: -0.7em;
-  font-size: 1em;
-  padding: 0 0.25em;
-  color: grey;
-  background: url("../img/bg.jpg");
-}
-
 .label__text {
   opacity: .75;
   text-transform: uppercase;
@@ -682,12 +760,26 @@ hr.style-eight:after {
   position: relative;
 }
 
+.footer {
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text {
+  color: lightgrey;
+}
+
 .label {
   justify-content: center;
   display: inline-block;
   vertical-align: top;
   border: 1px solid #393939;
-  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 50%), inset 0 0px 0 0 #393939;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 50%), inset 0 0 0 0 #393939;
   background: #0F0F0F;
   border-radius: 3px;
   position: relative;
@@ -695,9 +787,11 @@ hr.style-eight:after {
   padding-top: 4px;
 }
 
+/*
+
 .style-seven {
   width: 40%;
-  overflow: visible; /* For IE */
+  overflow: visible; /* For IE
   padding: 0;
   border: none;
   color: white;
@@ -706,6 +800,7 @@ hr.style-eight:after {
   background-image: linear-gradient(to right, rgb(255,255,255, 0), rgb(255,255,255, 0.50), 	rgb(255,255,255, 0));
 }
 
+*/
 
 .play-section {
   width: 100%;
@@ -748,8 +843,6 @@ a {
 .header-a {
   transition: color 300ms;
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
   color: white;
 }
 
